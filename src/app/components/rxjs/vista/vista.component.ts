@@ -1,16 +1,25 @@
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
-import { TiposService } from '../../services/tipos.service';
+import { TiposService } from '../../../services/tipos.service';
 
 @Component({
   selector: 'app-vista',
   templateUrl: './vista.component.html',
   styleUrls: ['./vista.component.css']
 })
+
 export class VistaComponent implements OnInit {
 
-  tipos: string[] = [];
+  nameRxjs: string = "Rxjs";
+  nameNgrx: string = "Ngrx";
+  testing: string = "Testing";
+  
+
+  rxjsOptions: string[] = [];
+  ngrxOptions: string[] = [];
+  testingOptions: string[] = [];
+  
   types: any;
   componentSel: string;
   elemenSelected: string;
@@ -19,15 +28,16 @@ export class VistaComponent implements OnInit {
     private tipoService : TiposService,
     private router: Router ){
 
-    this.tipos= [];
+    this.rxjsOptions= [];
     this.componentSel = "";
     this.elemenSelected = "";
+    this.testingOptions.push("Incrementador")
 
   }
 
   ngOnInit(): void  {
 
-    this.tipos = this.tipoService.obtenerTipos();
+    this.rxjsOptions = this.tipoService.obtenerTipos();
     
    }
 
@@ -61,6 +71,9 @@ export class VistaComponent implements OnInit {
         
       case 'Filter':
         this.router.navigate(['/filter']);
+        break;
+      case 'Incrementador':
+        this.router.navigate(['/incrementador']);
         break;
 
       default:

@@ -1,6 +1,6 @@
 
 <div ngbDropdown class="d-inline-block" style="color: black">
-  <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Ejemplos</button>
+  <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{ name }}</button>
   <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
       <button ngbDropdownItem *ngFor="let item of lines; let idx = index;" (click)="itemSeleccionado(idx)">{{ item }}</button>
   </div>

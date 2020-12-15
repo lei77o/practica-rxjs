@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TiposService {
 
-  constructor() { }
+  constructor( public http: HttpClient) { }
 
   obtenerTipos(){
 
@@ -18,7 +19,13 @@ export class TiposService {
     tipos.push('Forkjoin');
     tipos.push('Subject');
 
+    tipos.sort();
+
     return tipos;
+  }
+
+  getTypes(){
+    return this.http.get('http://www.google.com');
   }
 
 }

@@ -1,0 +1,17 @@
+<div class="container-fluid" style="padding: 1em; background-color: #2A9D8F; color: white;" >
+    <div class="row">   
+        <div class="col-9">
+            <h4>Ejercicios de práctica de RXjs</h4>
+        </div>    
+        <div class="col-1" style="padding: 0.1rem;">
+            <app-dropdown [lines]="testingOptions" [name]="testing" (ruta)="showComponent($event)"></app-dropdown>
+        </div>
+        <div class="col-1" style="padding: 0.1rem;">
+            <app-dropdown [lines]="rxjsOptions" [name]="nameRxjs" (ruta)="showComponent($event)"></app-dropdown>
+        </div>
+        <div class="col-1" style="padding: 0.1rem;">
+            <app-dropdown [lines]="ngrxOptions" [name]="nameNgrx" (ruta)="showComponent($event)"></app-dropdown>
+        </div>
+    </div>
+</div>
+

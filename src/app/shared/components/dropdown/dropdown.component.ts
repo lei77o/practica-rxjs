@@ -9,6 +9,7 @@ export class DropdownComponent implements OnInit {
 
 
   @Input() lines: string [];
+  @Input() name: string ="";
 
   @Output() ruta: EventEmitter<string>
 
