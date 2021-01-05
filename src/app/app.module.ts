@@ -8,9 +8,9 @@ import { FormsModule } from '@angular/forms';
 
 //Ngrx
 import { StoreModule } from '@ngrx/store';
-import { EffectsModule }  from '@ngrx/effects';
+import { Actions, EffectsModule }  from '@ngrx/effects';
 import { StoreRouterConnectingModule, routerReducer} from '@ngrx/router-store';
-import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+
 
 
 //Configs
@@ -23,13 +23,21 @@ import { MapComponent } from './components/rxjs/map/map.component';
 import { MapFilterComponent } from './components/rxjs/map-filter/map-filter.component';
 import { ObservableNextErrorComponent } from './components/rxjs/observable-next-error/observable-next-error.component';
 import { SubjectsComponent } from './components/rxjs/subjects/subjects.component';
-import { VistaComponent } from './components/rxjs/vista/vista.component';
+import { HeaderComponent } from './components/header/header.component';
 import { DropdownComponent} from './shared/components/dropdown/dropdown.component';
 import { IncrementadorComponent } from './components/testing/incrementador/incrementador.component';
 
+//import { contadorReducer } from './components/ngrx/contador/contador.reducer';
+//import { HijoComponent } from './components/ngrx/contador/hijo/hijo.component';
+//import { NietoComponent } from './components/ngrx/contador/nieto/nieto.component';
+
 //FontAwesome
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+//import {} from '';
+import { FooterComponent } from './components/footer/footer.component';
+import { ViewNgrxComponent } from './components/ngrx/view-ngrx/view-ngrx.component';
 
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -40,10 +48,14 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MapComponent,
     MapFilterComponent,
     ObservableNextErrorComponent,
-    VistaComponent,
+    HeaderComponent,
     DropdownComponent,
     SubjectsComponent ,
     IncrementadorComponent,
+    FooterComponent,
+    //HijoComponent,
+    //NietoComponent,
+    ViewNgrxComponent,
     
   ],
   imports: [
@@ -53,8 +65,13 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     NgbModule,
     FontAwesomeModule,
     FormsModule,
-    //StoreModule.forRoot(),
     EffectsModule,
+    //StoreModule.forRoot(contadorReducer)
+    //StoreModule.forRoot({ count: counterReducer })
+    /*StoreDevtoolsModule.instrument({
+      maxAge: 25, //manejar 25 acciones
+      logOnly: environment.production //para impedir que los usuarios puedan hacerlo en produccion
+    }),*/
 
   ],
   providers: [],

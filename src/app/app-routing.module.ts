@@ -18,6 +18,7 @@ const routes: Routes = [
   { path: 'forkjoin', component: ForkjoinComponent},
   { path: 'subject', component: SubjectsComponent},
   { path: 'incrementador', component: IncrementadorComponent},
+  { path: 'testing', component: IncrementadorComponent}
   
 ];
 
