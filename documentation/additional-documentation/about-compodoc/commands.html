@@ -49,16 +49,40 @@
 
 
 
-<h3>Compodoc </h3>
+<h3> Commands examples </h3>
+<h5>Run</h5>
+<p> Define a script task for it in your package.json </p>
+<code> 
+"scripts": {
+  "compodoc": "npx compodoc -p tsconfig.json documentation -o -s"
+}
+</code>
 
-<p>Compodoc is a documentation tool for Angular applications. It generates a static documentation of your application. </p>
-<p>Why Use Compodoc ? </p>
-<p>Compodoc helps Angular developers providing a clear and helpful documentation of their application. </p>
-<p>Others developers of your team, or internet visitors for a public documentation, can leaner easily understand the features of your application or library. </p>
-<p>Open Source </p>
-<p>Compodoc is an open source effort from Vincent Ogloblinsky. </p>
-<p>Developers can contribute and fork the repo on GitHub. </p>
-<p>Don&#39;t forget to read the Contributing guide. </p>
+<h5> Change Theme</h5>
+<p> You can see the different themes avaible on the <a href="https://compodoc.app/guides/themes.html">web </a></p>
+<code> 
+"scripts": {
+  "compodoc": "npx compodoc -p tsconfig.json documentation -o -s --theme material"
+}
+</code>
+
+<h5> Create new section</h5>
+<p> If you need to add more information about your project, you can create a <a href="https://compodoc.app/guides/themes.html">custom section.</a></p>
+<lu>
+<li> 
+Add new line in package.json
+<code> 
+"scripts": {
+  "additional": "npx compodoc -p tsconfig.app.json -d documentation -o -s --includes ./additional -w",
+}
+</code>
+</li>
+<li> Run in a terminal
+<code> > npm run additional</code>
+</li>
+<li> Finally to add files for subsections and add contect, follow the <a href="https://compodoc.app/guides/tips-and-tricks.html">tips and tricks section</a> </li>
+</lu>
+<p>  </p>
 
                    </div><div class="search-results">
     <div class="has-results">
@@ -77,7 +101,7 @@
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 2;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'additional-page';
-            var COMPODOC_CURRENT_PAGE_URL = 'a---1.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'commands.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 

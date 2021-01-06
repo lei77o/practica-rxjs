@@ -4,9 +4,9 @@
             <h4>Ejercicios de práctica de RXjs</h4>
         </div>
         <div class="col-6" style="text-align: right;">
-            <app-dropdown [lines]="rxjsOptions" [name]="nameRxjs" (ruta)="showComponent($event)"></app-dropdown>
-            <app-dropdown [lines]="ngrxOptions" [name]="ngRx" (ruta)="showComponent($event)"></app-dropdown>
-            <app-dropdown [lines]="testingOptions" [name]="testing" (ruta)="showComponent($event)"></app-dropdown>
+            <app-dropdown [lines]="rxjsOptions" [name]="nameRxjs" (ruta)="captureSelected($event)"></app-dropdown>
+            <app-dropdown [lines]="ngrxOptions" [name]="ngRx" (ruta)="captureSelected($event)"></app-dropdown>
+            <app-dropdown [lines]="testingOptions" [name]="testing" (ruta)="captureSelected($event)"></app-dropdown>
         </div>
     </div>
 </div>

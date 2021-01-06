@@ -1,48 +1,17 @@
 [
     {
-        "title": "Section A",
-        "file": "a.md",
+        "title": "About Compodoc",
+        "file": "1-compodoc.md",
         "children": [
             {
-                "title": "A - 1",
-                "file": "b.md",
-                "children": [
-                    {
-                        "title": "A - 1.1",
-                        "file": "b.md"
-                    },
-                    {
-                        "title": "A 1.2",
-                        "file": "b.md"
-                    }
-                ]
+                "title": "Start",
+                "file": "2-start.md"
             },
             {
-                "title": "A - 2",
-                "file": "b.md"
-            }
-        ]
-    },
-    {
-        "title": "Section B",
-        "file": "b.md",
-        "children": [
-            {
-                "title": "B - 1",
-                "file": "b.md"
-            },
-            {
-                "title": "B - 2",
-                "file": "b.md"
-            },
-            {
-                "title": "B - 3",
-                "file": "b.md"
-            },
-            {
-                "title": "B - 4",
-                "file": "b.md"
+                "title": "Commands",
+                "file": "3-commands.md"
             }
         ]
     }
+    
 ]

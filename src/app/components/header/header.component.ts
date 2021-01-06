@@ -24,6 +24,12 @@ export class HeaderComponent implements OnInit {
   componentSel: string;
   elemenSelected: string;
 
+/**
+ * En el constructor se instancian el servicio para obtener los tipos de datos y el Router provisto por {@link https://angular.io|Angular}
+ * @param tipoService Instancia del servicio TipoService que obtiene los tipos de elementos
+ * @param router Instancia Router de Angular 
+ */
+
   constructor( 
     private tipoService : TiposService,
     private router: Router ){
@@ -41,14 +47,28 @@ export class HeaderComponent implements OnInit {
     
    }
 
-  showComponent(event: string){
+  /**
+ * Metodo para capturar el tipo seleccionado y obtener el nombre
+ * {@link http://www.google.com definicion de event}
+ * @example 
+ * Capturar el evento
+ * 
+ * @param event event click en el DOM 
+ */
+
+  captureSelected(event: string){
     this.elemenSelected = event.toString();
-    this.seleccion(this.elemenSelected); 
+    this.navigateComponent(this.elemenSelected); 
   }
 
-  seleccion(elemento : string){
+  /**
+   * Realiza el {@link https://angular.io/guide/router navigate}  hacia los otros componentes
+   * @param element nombre del tipo seleccionado
+   */
 
-    switch (elemento) {
+  navigateComponent(element : string){
+
+    switch (element) {
       case 'Subject':
         this.router.navigate(['/subject']);
         break;
@@ -86,7 +106,9 @@ export class HeaderComponent implements OnInit {
 
   }
 
-  //Metodos para testing de integracin
+   /**
+   * Este metodo esta definido para la practica de testing
+   */
   getType(){
     this.tipoService.getTypes().subscribe(
       (tips : any) => this.types = tips

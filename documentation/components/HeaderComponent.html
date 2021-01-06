@@ -170,16 +170,16 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                <a href="#captureSelected">captureSelected</a>
+                            </li>
+                            <li>
                                 <a href="#getType">getType</a>
                             </li>
                             <li>
+                                <a href="#navigateComponent">navigateComponent</a>
+                            </li>
+                            <li>
                                 <a href="#ngOnInit">ngOnInit</a>
-                            </li>
-                            <li>
-                                <a href="#seleccion">seleccion</a>
-                            </li>
-                            <li>
-                                <a href="#showComponent">showComponent</a>
                             </li>
                         </ul>
                     </td>
@@ -210,6 +210,8 @@
 
                 <tr>
                     <td class="col-md-4">
+                            <div class="io-description"><p>En el constructor se instancian el servicio para obtener los tipos de datos y el Router provisto por <a href="https://angular.io">Angular</a></p>
+</div>
                             <div>
                                     <b>Parameters :</b>
                                     <table class="params">
@@ -218,6 +220,7 @@
                                                 <td>Name</td>
                                                     <td>Type</td>
                                                 <td>Optional</td>
+                                                    <td>Description</td>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -232,6 +235,10 @@
                                                             No
                                                     </td>
                                                     
+                                                        <td>
+                                                                <code><p>Instancia del servicio TipoService que obtiene los tipos de elementos</p>
+</code>
+                                                        </td>
                                                 </tr>
                                                 <tr>
                                                         <td>router</td>
@@ -244,6 +251,10 @@
                                                             No
                                                     </td>
                                                     
+                                                        <td>
+                                                                <code><p>Instancia Router de Angular </p>
+</code>
+                                                        </td>
                                                 </tr>
                                         </tbody>
                                     </table>
@@ -267,6 +278,88 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="captureSelected"></a>
+                    <span class="name">
+                        <b>
+                            captureSelected
+                        </b>
+                        <a href="#captureSelected"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>captureSelected(event: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="59"
+                            class="link-to-prism">src/app/components/header/header.component.ts:59</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo para capturar el tipo seleccionado y obtener el nombre
+<a href="http://www.google.com">definicion de event</a></p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>event click en el DOM </p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <b>Example :</b>
+                        <div>
+                            <pre class="line-numbers"><code class="language-html">Capturar el evento</code></pre>
+                        </div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="getType"></a>
                     <span class="name">
                         <b>
@@ -285,18 +378,97 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="90"
-                            class="link-to-prism">src/app/components/header/header.component.ts:90</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="112"
+                            class="link-to-prism">src/app/components/header/header.component.ts:112</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Este metodo esta definido para la practica de testing</p>
+</div>
 
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigateComponent"></a>
+                    <span class="name">
+                        <b>
+                            navigateComponent
+                        </b>
+                        <a href="#navigateComponent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>navigateComponent(element: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="69"
+                            class="link-to-prism">src/app/components/header/header.component.ts:69</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Realiza el <a href="https://angular.io/guide/router">navigate</a>  hacia los otros componentes</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>element</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>nombre del tipo seleccionado</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
                     </div>
                 </td>
             </tr>
@@ -324,115 +496,6 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="38"
-                            class="link-to-prism">src/app/components/header/header.component.ts:38</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="seleccion"></a>
-                    <span class="name">
-                        <b>
-                            seleccion
-                        </b>
-                        <a href="#seleccion"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-<code>seleccion(elemento: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="49"
-                            class="link-to-prism">src/app/components/header/header.component.ts:49</a></div>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
-
-                    <div class="io-description">
-                        <b>Parameters :</b>
-                        <table class="params">
-                            <thead>
-                                <tr>
-                                    <td>Name</td>
-                                    <td>Type</td>
-                                    <td>Optional</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>elemento</td>
-                                    <td>
-                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                    </div>
-                    <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                    </div>
-                    <div class="io-description">
-                        
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="showComponent"></a>
-                    <span class="name">
-                        <b>
-                            showComponent
-                        </b>
-                        <a href="#showComponent"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-            <tr>
-                <td class="col-md-4">
-<code>showComponent(event: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
-                </td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="44"
                             class="link-to-prism">src/app/components/header/header.component.ts:44</a></div>
                 </td>
@@ -443,39 +506,8 @@
                 <td class="col-md-4">
 
                     <div class="io-description">
-                        <b>Parameters :</b>
-                        <table class="params">
-                            <thead>
-                                <tr>
-                                    <td>Name</td>
-                                    <td>Type</td>
-                                    <td>Optional</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>event</td>
-                                    <td>
-                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                    </td>
-
-                                    <td>
-                                        No
-                                    </td>
-
-
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                    </div>
-                    <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                    </div>
-                    <div class="io-description">
-                        
                     </div>
                 </td>
             </tr>
@@ -792,6 +824,12 @@ export class HeaderComponent implements OnInit {
   componentSel: string;
   elemenSelected: string;
 
+/**
+ * En el constructor se instancian el servicio para obtener los tipos de datos y el Router provisto por {@link https://angular.io|Angular}
+ * @param tipoService Instancia del servicio TipoService que obtiene los tipos de elementos
+ * @param router Instancia Router de Angular 
+ */
+
   constructor( 
     private tipoService : TiposService,
     private router: Router ){
@@ -809,14 +847,28 @@ export class HeaderComponent implements OnInit {
     
    }
 
-  showComponent(event: string){
+  /**
+ * Metodo para capturar el tipo seleccionado y obtener el nombre
+ * {@link http://www.google.com definicion de event}
+ * @example 
+ * Capturar el evento
+ * 
+ * @param event event click en el DOM 
+ */
+
+  captureSelected(event: string){
     this.elemenSelected &#x3D; event.toString();
-    this.seleccion(this.elemenSelected); 
+    this.navigateComponent(this.elemenSelected); 
   }
 
-  seleccion(elemento : string){
+  /**
+   * Realiza el {@link https://angular.io/guide/router navigate}  hacia los otros componentes
+   * @param element nombre del tipo seleccionado
+   */
 
-    switch (elemento) {
+  navigateComponent(element : string){
+
+    switch (element) {
       case &#x27;Subject&#x27;:
         this.router.navigate([&#x27;/subject&#x27;]);
         break;
@@ -854,7 +906,9 @@ export class HeaderComponent implements OnInit {
 
   }
 
-  //Metodos para testing de integracin
+   /**
+   * Este metodo esta definido para la practica de testing
+   */
   getType(){
     this.tipoService.getTypes().subscribe(
       (tips : any) &#x3D;&gt; this.types &#x3D; tips
@@ -872,9 +926,9 @@ export class HeaderComponent implements OnInit {
             &lt;h4&gt;Ejercicios de práctica de RXjs&lt;/h4&gt;
         &lt;/div&gt;
         &lt;div class&#x3D;&quot;col-6&quot; style&#x3D;&quot;text-align: right;&quot;&gt;
-            &lt;app-dropdown [lines]&#x3D;&quot;rxjsOptions&quot; [name]&#x3D;&quot;nameRxjs&quot; (ruta)&#x3D;&quot;showComponent($event)&quot;&gt;&lt;/app-dropdown&gt;
-            &lt;app-dropdown [lines]&#x3D;&quot;ngrxOptions&quot; [name]&#x3D;&quot;ngRx&quot; (ruta)&#x3D;&quot;showComponent($event)&quot;&gt;&lt;/app-dropdown&gt;
-            &lt;app-dropdown [lines]&#x3D;&quot;testingOptions&quot; [name]&#x3D;&quot;testing&quot; (ruta)&#x3D;&quot;showComponent($event)&quot;&gt;&lt;/app-dropdown&gt;
+            &lt;app-dropdown [lines]&#x3D;&quot;rxjsOptions&quot; [name]&#x3D;&quot;nameRxjs&quot; (ruta)&#x3D;&quot;captureSelected($event)&quot;&gt;&lt;/app-dropdown&gt;
+            &lt;app-dropdown [lines]&#x3D;&quot;ngrxOptions&quot; [name]&#x3D;&quot;ngRx&quot; (ruta)&#x3D;&quot;captureSelected($event)&quot;&gt;&lt;/app-dropdown&gt;
+            &lt;app-dropdown [lines]&#x3D;&quot;testingOptions&quot; [name]&#x3D;&quot;testing&quot; (ruta)&#x3D;&quot;captureSelected($event)&quot;&gt;&lt;/app-dropdown&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -920,7 +974,7 @@ export class HeaderComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="container-fluid" style="padding: 1em; background-color: #2A9D8F; color: white;" >    <div class="row">           <div class="col-6">            <h4>Ejercicios de práctica de RXjs</h4>        </div>        <div class="col-6" style="text-align: right;">            <app-dropdown [lines]="rxjsOptions" [name]="nameRxjs" (ruta)="showComponent($event)"></app-dropdown>            <app-dropdown [lines]="ngrxOptions" [name]="ngRx" (ruta)="showComponent($event)"></app-dropdown>            <app-dropdown [lines]="testingOptions" [name]="testing" (ruta)="showComponent($event)"></app-dropdown>        </div>    </div></div></div>'
+        var COMPONENT_TEMPLATE = '<div><div class="container-fluid" style="padding: 1em; background-color: #2A9D8F; color: white;" >    <div class="row">           <div class="col-6">            <h4>Ejercicios de práctica de RXjs</h4>        </div>        <div class="col-6" style="text-align: right;">            <app-dropdown [lines]="rxjsOptions" [name]="nameRxjs" (ruta)="captureSelected($event)"></app-dropdown>            <app-dropdown [lines]="ngrxOptions" [name]="ngRx" (ruta)="captureSelected($event)"></app-dropdown>            <app-dropdown [lines]="testingOptions" [name]="testing" (ruta)="captureSelected($event)"></app-dropdown>        </div>    </div></div></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DropdownComponent', 'selector': 'app-dropdown'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'ForkjoinComponent', 'selector': 'app-forkjoin'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HijoComponent', 'selector': 'app-hijo'},{'name': 'IncrementadorComponent', 'selector': 'app-incrementador'},{'name': 'IntervalTimerComponent', 'selector': 'app-interval-timer'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'MapFilterComponent', 'selector': 'app-map-filter'},{'name': 'NietoComponent', 'selector': 'app-nieto'},{'name': 'ObservableNextErrorComponent', 'selector': 'app-observable-next-error'},{'name': 'SubjectsComponent', 'selector': 'app-subjects'},{'name': 'ViewNgrxComponent', 'selector': 'app-view-ngrx'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'HeaderComponent'};
@@ -958,7 +1012,7 @@ export class HeaderComponent implements OnInit {
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
-            var COMPODOC_CURRENT_PAGE_URL = 'HeaderComponent.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'commands.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 

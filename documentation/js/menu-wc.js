@@ -50,48 +50,19 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                         </div>
                         <ul class="links collapse " ${ isNormalMode ? 'id="additional-pages"' : 'id="xs-additional-pages"' }>
                                     <li class="chapter inner">
-                                        <a data-type="chapter-link" href="additional-documentation/section-a.html" data-context-id="additional">
+                                        <a data-type="chapter-link" href="additional-documentation/about-compodoc.html" data-context-id="additional">
                                             <div class="menu-toggler linked" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#additional-page-0189f3fe221ea7157a87eaea3cd24432"' : 'data-target="#xs-additional-page-0189f3fe221ea7157a87eaea3cd24432"' }>
-                                                <span class="link-name">Section A</span>
+                                            'data-target="#additional-page-749707cf43663706bc0288886051ca92"' : 'data-target="#xs-additional-page-749707cf43663706bc0288886051ca92"' }>
+                                                <span class="link-name">About Compodoc</span>
                                                 <span class="icon ion-ios-arrow-down"></span>
                                             </div>
                                         </a>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="additional-page-0189f3fe221ea7157a87eaea3cd24432"' : 'id="xs-additional-page-0189f3fe221ea7157a87eaea3cd24432"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="additional-page-749707cf43663706bc0288886051ca92"' : 'id="xs-additional-page-749707cf43663706bc0288886051ca92"' }>
                                             <li class="link for-chapter2">
-                                                <a href="additional-documentation/section-a/a---1.html" data-type="entity-link" data-context="sub-entity" data-context-id="additional">A - 1</a>
-                                            </li>
-                                            <li class="link for-chapter3">
-                                                <a href="additional-documentation/section-a/a---1/a---1.1.html" data-type="entity-link" data-context="sub-entity" data-context-id="additional">A - 1.1</a>
-                                            </li>
-                                            <li class="link for-chapter3">
-                                                <a href="additional-documentation/section-a/a---1/a-1.2.html" data-type="entity-link" data-context="sub-entity" data-context-id="additional">A 1.2</a>
+                                                <a href="additional-documentation/about-compodoc/start.html" data-type="entity-link" data-context="sub-entity" data-context-id="additional">Start</a>
                                             </li>
                                             <li class="link for-chapter2">
-                                                <a href="additional-documentation/section-a/a---2.html" data-type="entity-link" data-context="sub-entity" data-context-id="additional">A - 2</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="chapter inner">
-                                        <a data-type="chapter-link" href="additional-documentation/section-b.html" data-context-id="additional">
-                                            <div class="menu-toggler linked" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#additional-page-41dfac06374326c327273a0d0663d5bd"' : 'data-target="#xs-additional-page-41dfac06374326c327273a0d0663d5bd"' }>
-                                                <span class="link-name">Section B</span>
-                                                <span class="icon ion-ios-arrow-down"></span>
-                                            </div>
-                                        </a>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="additional-page-41dfac06374326c327273a0d0663d5bd"' : 'id="xs-additional-page-41dfac06374326c327273a0d0663d5bd"' }>
-                                            <li class="link for-chapter2">
-                                                <a href="additional-documentation/section-b/b---1.html" data-type="entity-link" data-context="sub-entity" data-context-id="additional">B - 1</a>
-                                            </li>
-                                            <li class="link for-chapter2">
-                                                <a href="additional-documentation/section-b/b---2.html" data-type="entity-link" data-context="sub-entity" data-context-id="additional">B - 2</a>
-                                            </li>
-                                            <li class="link for-chapter2">
-                                                <a href="additional-documentation/section-b/b---3.html" data-type="entity-link" data-context="sub-entity" data-context-id="additional">B - 3</a>
-                                            </li>
-                                            <li class="link for-chapter2">
-                                                <a href="additional-documentation/section-b/b---4.html" data-type="entity-link" data-context="sub-entity" data-context-id="additional">B - 4</a>
+                                                <a href="additional-documentation/about-compodoc/commands.html" data-type="entity-link" data-context="sub-entity" data-context-id="additional">Commands</a>
                                             </li>
                                         </ul>
                                     </li>
