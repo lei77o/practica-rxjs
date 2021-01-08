@@ -67,7 +67,7 @@ import { environment } from '../environments/environment';
     FormsModule,
     EffectsModule,
     //StoreModule.forRoot(contadorReducer)
-    //StoreModule.forRoot({ count: counterReducer })
+    StoreModule.forRoot({ count: counterReducer })
     /*StoreDevtoolsModule.instrument({
       maxAge: 25, //manejar 25 acciones
       logOnly: environment.production //para impedir que los usuarios puedan hacerlo en produccion
